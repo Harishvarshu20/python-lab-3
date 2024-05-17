@@ -1,0 +1,7 @@
+numbers = [7, -5, 10, -3, -8, 4, 2, -1]
+positive_numbers = [num for num in numbers if num > 0]
+negative_numbers = [num for num in numbers if num < 0]
+
+print("Original list:", numbers)
+print("Positive numbers:", positive_numbers)
+print("Negative numbers:", negative_numbers)
