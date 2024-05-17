@@ -1,0 +1,10 @@
+def fibonacci():
+    a, b = 0, 1
+    yield a
+    yield b
+    while True:
+        a, b = b, a + b
+        yield b
+fibonacci_numbers = [next(fibonacci()) for _ in range(20)]
+print("First 20 Fibonacci numbers:")
+print(fibonacci_numbers)
